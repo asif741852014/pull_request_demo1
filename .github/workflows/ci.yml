@@ -12,3 +12,7 @@ jobs:
     steps:
       - name: Checkout code
         run: echo "hi from pull request"
+  test2:
+    runs-on: ubuntu-latest
+    steps:
+    - run: echo "hi my anme is mohammeed"
