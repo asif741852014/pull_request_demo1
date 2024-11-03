@@ -1,0 +1,14 @@
+name: Pull Request CI
+
+on:
+  pull_request:
+    branches:
+      - main    # Triggers when a pull request targets the `main` branch
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        run: echo "hi from pull request"
